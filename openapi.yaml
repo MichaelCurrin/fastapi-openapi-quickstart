@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: Simple Python App API
+  title: FastAPI OpenAPI Quickstart
   version: 1.0.0
   description: |
     API specification for a simple Python service providing a health check,

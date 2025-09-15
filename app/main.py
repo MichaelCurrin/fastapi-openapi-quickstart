@@ -18,7 +18,7 @@ from app.models import (
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
-app = FastAPI(title="Simple Python App API", version="1.0.0")
+app = FastAPI(title="FastAPI OpenAPI Quickstart", version="1.0.0")
 
 
 @app.exception_handler(RequestValidationError)

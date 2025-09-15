@@ -1,4 +1,4 @@
-# FastAPI OpenAPI quickstart
+# FastAPI OpenAPI Quickstart
 > Basic Python app to combine FastAPI + OpenAPI spec + Swagger UI
 
 - [OpenAPI specification](https://swagger.io/specification/)
