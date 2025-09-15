@@ -4,7 +4,6 @@ from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.exception_handlers import request_validation_exception_handler
-from fastapi.openapi.docs import get_swagger_ui_html
 from fastapi.responses import JSONResponse
 
 from app.models import (
@@ -71,15 +70,3 @@ async def post_greet(payload: GreetRequest) -> GreetResponse:
     :returns: Greeting message with the provided name.
     """
     return GreetResponse(message=f"hello {payload.name}!")
-
-
-@app.get("/docs", include_in_schema=False)
-async def get_swagger_ui() -> JSONResponse:
-    """
-    Return Swagger UI.
-
-    :returns: Swagger UI HTML.
-    """
-    return get_swagger_ui_html(
-        title="Swagger UI - YAML Spec",
-    )
