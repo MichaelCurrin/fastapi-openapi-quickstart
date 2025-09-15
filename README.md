@@ -1,8 +1,13 @@
 # FastAPI OpenAPI Quickstart
 > Basic Python app to combine FastAPI + OpenAPI spec + Swagger UI
 
-- [OpenAPI specification](https://swagger.io/specification/)
+## References
+
+- [FastAPI features](https://fastapi.tiangolo.com/features/) in the documentation
+- [OpenAPI specification](https://swagger.io/specification/) on Swagger website
+- [OpenAPI specificaiton](https://github.com/OAI/OpenAPI-Specification) on GitHub
 - [Swagger](https://swagger.io/) website
+- [ReDoc](https://github.com/Redocly/redoc) on GitHub
 
 ## Install
 
@@ -13,8 +18,6 @@ make install
 ```
 
 ## Usage
-
-### Run
 
 Start dev server:
 
@@ -28,8 +31,10 @@ Server with overrides:
 make serve HOST=0.0.0.0 PORT=9000
 ```
 
-### API Docs
+## API Docs
 
-- **Swagger UI**: `http://127.0.0.1:8000/docs`
-- **ReDoc**: `http://127.0.0.1:8000/redoc`
-- **OpenAPI (JSON)**: `http://127.0.0.1:8000/openapi.json` (from FastAPI)
+These are builtin features for FastAPI:
+
+- **Swagger UI**: http://127.0.0.1:8000/docs
+- **ReDoc**: http://127.0.0.1:8000/redoc
+- **OpenAPI (JSON)**: http://127.0.0.1:8000/openapi.json
